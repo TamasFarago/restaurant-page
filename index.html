@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -19,7 +20,7 @@
     </div>
     <div class="middle-nav">
         <ul>
-            <li><a href="#">Menus</li></a>
+            <li><a href="#">Menu</li></a>
             <li><a href="#">About Us</li></a>
             <li><a href="#">Gallery</li></a>
             <li><a href="#">Order Online</li></a>
@@ -29,7 +30,7 @@
     </div>
     <div class="book-button">
         <div class="border">
-        <a href="#">
+        <a href="https://www.bookenda.com/">
             <span><p>Book A Table</p></span>
         </a>
     </div>
@@ -66,7 +67,19 @@
         </div>
     </section>
     <section class="menu">
-        <div class="container-fluid padding">
+        <div class="menu-sidebar">
+            <div class="sticky-flex">
+            <ul>
+                <li><a href="#drinks">Drinks</li></a>
+                <li><a href="#">Dessert</li></a>
+                <li><a href="#">Mains</li></a>
+                
+            </ul>
+        </div>
+            
+        </div>
+        <div id="main-course">
+            <div class="container-fluid padding" id="main-c">
             <div class="row text-center">
                 <div class="col-12 col-md-4 menu-text">
                     <p>Menu</p>
@@ -175,7 +188,119 @@
             </div>
            
         </div>
+        <div class="drinks" href="#drinks">
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-12 col-md-4 menu-text">
+                        <p>Drinks</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-4 main-course">
+                        <p>WHITE</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>VIOGNIER / SAUVIGNON BLANC</p>
+                            <p>B $ 35</p>
+                        </div>
+                        <p class="food-description">Languedoc, France, Pierrick Harang</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>SAUVIGNON BLANC / MUSCAT</p>
+                            <p>B $ 39</p>
+                        </div>
+                        <p class="food-description">Languedoc, France, Domaine Reine Juliette</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CHABLIS</p>
+                            <p>G $ 16 / B $ 70</p>
+                        </div>
+                        <p class="food-description">Bourgogne, France, Clotilde Davenne (Bio)</p>
+                    </div>
+                </div>
+    
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>SANCERRE</p>
+                            <p>G $ 17 / B $ 75</p>
+                        </div>
+                        <p class="food-description">Loire, France, Domaine Tinel-Blondelet, Frétoy</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>SAUVIGNON BLANC</p>
+                            <p>G $ 12 / B $ 55</p>
+                        </div>
+                        <p class="food-description">Touraine, France, Domaine Vincent Ricard</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>PINOT GRIGIO</p>
+                            <p>G $ 13 / B $ 57</p>
+                        </div>
+                        <p class="food-description">Frioul, Italie, Lorenzon, Feudi di Romans</p>
+                    </div>
+                </div>
+    
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>SOAVE CLASSICO</p>
+                            <p>G $ 13 / B $ 57</p>
+                        </div>
+                        <p class="food-description">Vénétie, Italie, Suavia Azianda Agricola</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>BLANC SELECCIÒ</p>
+                            <p>G $ 10 / B $ 45</p>
+                        </div>
+                        <p class="food-description">Penedès, Espagne, Can Feixes (Bio)</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CHARDONNAY</p>
+                            <p>G $ 14 / B $ 64</p>
+                        </div>
+                        <p class="food-description">Catalogne, Espagne, Clos Montblanc, Unic</p>
+                    </div>
+                </div>
+    
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CHARDONNAY</p>
+                            <p>B $ 33</p>
+                        </div>
+                        <p class="food-description">Central Coast, Californie, É.-U. 2016, Hayes Valley</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>BRESSOC BLANC</p>
+                            <p>G $ 11 / B $ 48</p>
+                        </div>
+                        <p class="food-description">Québec, Canada, Domaine Bresee</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CHARDONNAY</p>
+                            <p>B $ 33</p>
+                        </div>
+                        <p class="food-description">Abruzzes, Italie, Bellaretta</p>
+                    </div>
+        </div> 
+        
     </section>
+   
+    </div>
+    
 
 </section>
 
