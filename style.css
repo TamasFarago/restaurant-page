@@ -206,7 +206,6 @@ nav {
         background-position: center;
         background-size: cover;
         width: 100%;
-        float: right;
         position: relative 
         
      }
@@ -254,13 +253,20 @@ nav {
         margin-bottom: -20px;
         font-size: 1.5rem;
         
+        
     }
 
+    #main-course {
+        width: 95%;
+        /* float: right */
+        margin-left: 20px;
+        overflow-x: hidden;
+    } 
+
    .menu-sidebar {
-       /* width: 5%; */
+       width: 5%;
        height: 100vh;
        background: rgb(252, 252, 252);
-       width: 4vw;
        float: left;
        position: sticky;
        position: -webkit-sticky;
@@ -271,6 +277,8 @@ nav {
        justify-content: space-evenly;
        display: flex;
        flex-direction: row ;
+       float: left;
+       
        
     }
     
@@ -307,5 +315,17 @@ nav {
     text-transform: uppercase;
     margin-bottom: -20px;
     font-size: 1.5rem;
+    width: 95%;
+    /* float: right */
+    margin-left: 20px;
+    overflow-x: hidden;
+    
+   
+    
    }
  
+   .remove {
+       display: none;
+   }
+
+   

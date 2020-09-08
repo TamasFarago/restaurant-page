@@ -70,125 +70,243 @@
         <div class="menu-sidebar">
             <div class="sticky-flex">
             <ul>
-                <li><a href="#drinks">Drinks</li></a>
-                <li><a href="#">Dessert</li></a>
-                <li><a href="#">Mains</li></a>
+                <li class="drinksbtn" onClick="drinkfunc()"><a>Drinks</li></a>
+                <li class="dessertbtn"><a>Dessert</li></a>
+                <li class="mainsbtn" onClick="mainfunc()"><a>Mains</li></a>
                 
             </ul>
-        </div>
+            </div>
             
         </div>
         <div id="main-course">
-            <div class="container-fluid padding" id="main-c">
-            <div class="row text-center">
-                <div class="col-12 col-md-4 menu-text">
-                    <p>Menu</p>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-4 main-course">
-                    <p>Main Course</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row text-center">
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>FRIED CHICKEN NUGGETS</p>
-                        <p>12</p>
+            <div class="container-fluid mains" id="main-c">
+                <div class="row text-center">
+                    <div class="col-12 col-md-4 menu-text">
+                        <p>Menu</p>
                     </div>
-                    <p class="food-description">Homemade served with honey coulis</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>DUCK POUTINE</p>
-                        <p>14/19</p>
+                <div class="row text-center">
+                    <div class="col-4 main-course">
+                        <p>Main Course</p>
                     </div>
-                    <p class="food-description">Small or Large format</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>TOFU TAO</p>
-                        <p>15</p>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FRIED CHICKEN NUGGETS</p>
+                            <p>12</p>
+                        </div>
+                        <p class="food-description">Homemade served with honey coulis</p>
                     </div>
-                    <p class="food-description">Homemade served with honey coulis</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>DUCK POUTINE</p>
+                            <p>14/19</p>
+                        </div>
+                        <p class="food-description">Small or Large format</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>TOFU TAO</p>
+                            <p>15</p>
+                        </div>
+                        <p class="food-description">Homemade served with honey coulis</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row text-center">
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>FRIED CALAMARI BOWL</p>
-                        <p>15.50</p>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FRIED CALAMARI BOWL</p>
+                            <p>15.50</p>
+                        </div>
+                        <p class="food-description">Coated in seasoned flour and deep fried to golden brown perfection</p>
                     </div>
-                    <p class="food-description">Coated in seasoned flour and deep fried to golden brown perfection</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>FRIED CHICKEN</p>
-                        <p>17</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FRIED CHICKEN</p>
+                            <p>17</p>
+                        </div>
+                        <p class="food-description">Delicious homemade fried chicken</p>
                     </div>
-                    <p class="food-description">Delicious homemade fried chicken</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>MAC & CHEESE</p>
-                        <p>16.50 / 19 / 22</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>MAC & CHEESE</p>
+                            <p>16.50 / 19 / 22</p>
+                        </div>
+                        <p class="food-description">Extra : Bacon or Duck</p>
                     </div>
-                    <p class="food-description">Extra : Bacon or Duck</p>
                 </div>
-            </div>
 
-            <div class="row text-center">
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>CESAR SALAD</p>
-                        <p>14 / 18.50 / 18</p>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CESAR SALAD</p>
+                            <p>14 / 18.50 / 18</p>
+                        </div>
+                        <p class="food-description">Extra : Chicken or Organic tofu</p>
                     </div>
-                    <p class="food-description">Extra : Chicken or Organic tofu</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>CHEESEBURGER</p>
-                        <p>17.50</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CHEESEBURGER</p>
+                            <p>17.50</p>
+                        </div>
+                        <p class="food-description">With fries</p>
                     </div>
-                    <p class="food-description">With fries</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>FISH BURGER</p>
-                        <p>17.50</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FISH BURGER</p>
+                            <p>17.50</p>
+                        </div>
+                        <p class="food-description">With fries</p>
                     </div>
-                    <p class="food-description">With fries</p>
                 </div>
-            </div>
 
-            <div class="row text-center">
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>VEGAN BURGER</p>
-                        <p>17.50</p>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>VEGAN BURGER</p>
+                            <p>17.50</p>
+                        </div>
+                        <p class="food-description">With fries</p>
                     </div>
-                    <p class="food-description">With fries</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>SALMON TARTAR</p>
-                        <p>20</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>SALMON TARTAR</p>
+                            <p>20</p>
+                        </div>
+                        <p class="food-description">Citrus zest and juice, herbs with fries</p>
                     </div>
-                    <p class="food-description">Citrus zest and juice, herbs with fries</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                    <div class="food-item">
-                        <p>JUICY SALMON STEAK</p>
-                        <p>30</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>JUICY SALMON STEAK</p>
+                            <p>30</p>
+                        </div>
+                        <p class="food-description">Served with fries and ruccola</p>
                     </div>
-                    <p class="food-description">Served with fries and ruccola</p>
                 </div>
+                <div class="row text-center">
+                    <div class="col-12 col-md-4 menu-text">
+                        <p>Menu</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-4 main-course">
+                        <p>Main Course</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FRIED CHICKEN NUGGETS</p>
+                            <p>12</p>
+                        </div>
+                        <p class="food-description">Homemade served with honey coulis</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>DUCK POUTINE</p>
+                            <p>14/19</p>
+                        </div>
+                        <p class="food-description">Small or Large format</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>TOFU TAO</p>
+                            <p>15</p>
+                        </div>
+                        <p class="food-description">Homemade served with honey coulis</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FRIED CALAMARI BOWL</p>
+                            <p>15.50</p>
+                        </div>
+                        <p class="food-description">Coated in seasoned flour and deep fried to golden brown perfection</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FRIED CHICKEN</p>
+                            <p>17</p>
+                        </div>
+                        <p class="food-description">Delicious homemade fried chicken</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>MAC & CHEESE</p>
+                            <p>16.50 / 19 / 22</p>
+                        </div>
+                        <p class="food-description">Extra : Bacon or Duck</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CESAR SALAD</p>
+                            <p>14 / 18.50 / 18</p>
+                        </div>
+                        <p class="food-description">Extra : Chicken or Organic tofu</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>CHEESEBURGER</p>
+                            <p>17.50</p>
+                        </div>
+                        <p class="food-description">With fries</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>FISH BURGER</p>
+                            <p>17.50</p>
+                        </div>
+                        <p class="food-description">With fries</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>VEGAN BURGER</p>
+                            <p>17.50</p>
+                        </div>
+                        <p class="food-description">With fries</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>SALMON TARTAR</p>
+                            <p>20</p>
+                        </div>
+                        <p class="food-description">Citrus zest and juice, herbs with fries</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="food-item">
+                            <p>JUICY SALMON STEAK</p>
+                            <p>30</p>
+                        </div>
+                        <p class="food-description">Served with fries and ruccola</p>
+                    </div>
+          
             </div>
-           
+            
         </div>
-        <div class="drinks" href="#drinks">
+
+
+        
+            
+                
+               
+          
+            
+            
+        </div>
+        
+        <div class="drinks remove" href="#drinks">
             <div class="container-fluid padding">
                 <div class="row text-center">
                     <div class="col-12 col-md-4 menu-text">
@@ -295,11 +413,14 @@
                         </div>
                         <p class="food-description">Abruzzes, Italie, Bellaretta</p>
                     </div>
-        </div> 
+            </div> 
+        
+        </div>
+        
         
     </section>
    
-    </div>
+   
     
 
 </section>
