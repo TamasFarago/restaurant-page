@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+
+nav {
+    width: 20%;
+    background: rgb(56, 56, 56);
+    position: relative;
+    height: 100vh;
+    position: fixed;
+    float: left;
+    border-right: 1px solid rgb(75, 69, 69);
+}
+
+.logo img {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    
+}
+
+.middle-nav {
+     display: flex; 
+    justify-content: center;
+    align-items: center; 
+  
+}
+
+.middle-nav ul {
+    
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    
+}
+
+.middle-nav ul li {
+    padding-top: 1.5rem;
+    color: rgb(247, 237, 207);
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-size: 15px;
+    
+
+}
+
+.middle-nav ul li a {
+    color: inherit;
+}
+
+.book-button {
+    position: absolute;
+    bottom: 0;
+    /* background: rgb(255, 250, 226); */
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    /* line-height: 100px; */
+    vertical-align: middle;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.book-button p {
+    border: 1px solid black;
+    
+}
+
+.border p{
+    position: absolute;
+    left: 50%;
+    margin-top: 13px;
+    padding: 20px;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    padding-right: 20px;
+    width: 80%;
+    color: rgb(59, 55, 55);
+
+}
+
+.main-page {
+    width: 80%;
+    float: right;
+    position: relative
+}
+
+.carousel {
+    height: 100vh;
+    width: 100%;
+   
+    
+   
+}
+
+.carousel-inner img{
+    /* height: 100vh; */
+    height: 100vh;
+    opacity: 0.8
+}
+
+
+
+
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+    to {
+      -webkit-transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(1.5, 1.5);
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .carousel-inner .carousel-item > img {
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+  }
+
+  .carousel-caption  {
+    position: absolute;  
+    top: 55%;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-transform: uppercase;  
+  }
+
+
+ .carousel-caption p {
+    font-size: 4rem;
+    position: absolute; 
+    left: 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+     }
+   
+    
+     ol.carousel-indicators {
+        position: absolute;
+        bottom: 20%;
+        margin: 0;
+        left: 0;
+        right: 70%;
+        width: auto;
+        
+     }
+     
+     ol.carousel-indicators li,
+     ol.carousel-indicators li.active {
+        
+        width: 1rem;
+        height: 1rem;
+        margin: 0;
+        /* border-radius: 50%; */
+        border: 0;
+        background: transparent;
+        margin-right: 2.5rem;
+        transform: rotate(45deg)
+     }
+     
+     ol.carousel-indicators li {
+        background: rgba(255,255,255,0.39);
+        margin-left: .5rem;
+        
+        
+     }
+     
+     ol.carousel-indicators li.active {
+        background: rgb(255, 255, 255);
+     }
+
+
+     /* MENU SECTION */
+
+     .menu {
+        /* background: rgb(255, 250, 226); */
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+     }
+
+     .food-item {
+         font-size: 15px;
+         display: flex;
+         justify-content: space-between;
+         margin-right: 30px;
+         
+     }
+
+     .food-description {
+         display: flex;
+        align-items: flex-start;
+        font-size: 10px;
+        font-style: italic
+     }
+
+     .food-main {
+         margin-top: 20px;
+     }
+
+     .container-fluid hr {
+        background-color: black;
+        height: 2px;
+    }
+
+    .menu-text {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #333;
+        letter-spacing: 4px;
+        font-weight: bold
+    }
+    
+    .main-course {
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: -20px;
+        font-size: 1.5rem;
+    }

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="logo">
+       <a href="#"><img src="hiclipart.com.png" alt=""></a> 
+    </div>
+    <div class="middle-nav">
+        <ul>
+            <li><a href="#">Menus</li></a>
+            <li><a href="#">About Us</li></a>
+            <li><a href="#">Gallery</li></a>
+            <li><a href="#">Order Online</li></a>
+            <li><a href="#">Ice And Coffee</li></a>
+            <li><a href="#">Contact</li></a>
+        </ul>
+    </div>
+    <div class="book-button">
+        <div class="border">
+        <a href="#">
+            <span><p>Book A Table</p></span>
+        </a>
+    </div>
+    </div>
+</nav>
+<section class="main-page">
+    <section class="carousel">
+        <div id="cusCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#cusCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#cusCarousel" data-slide-to="1"></li>
+              <li data-target="#cusCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pic1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="pic1">We Are Now Open</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pic2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Come Discover <br>Our New Offers</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pic3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Delicious Food. <br> To fit your lifestyle</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-12 col-md-4 menu-text">
+                    <p>Menu</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-4 main-course">
+                    <p>Main Course</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>FRIED CHICKEN NUGGETS</p>
+                        <p>12</p>
+                    </div>
+                    <p class="food-description">Homemade served with honey coulis</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>DUCK POUTINE</p>
+                        <p>14/19</p>
+                    </div>
+                    <p class="food-description">Small or Large format</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>TOFU TAO</p>
+                        <p>15</p>
+                    </div>
+                    <p class="food-description">Homemade served with honey coulis</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>FRIED CALAMARI BOWL</p>
+                        <p>15.50</p>
+                    </div>
+                    <p class="food-description">Coated in seasoned flour and deep fried to golden brown perfection</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>FRIED CHICKEN</p>
+                        <p>17</p>
+                    </div>
+                    <p class="food-description">Delicious homemade fried chicken</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>MAC & CHEESE</p>
+                        <p>16.50 / 19 / 22</p>
+                    </div>
+                    <p class="food-description">Extra : Bacon or Duck</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>CESAR SALAD</p>
+                        <p>14 / 18.50 / 18</p>
+                    </div>
+                    <p class="food-description">Extra : Chicken or Organic tofu</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>CHEESEBURGER</p>
+                        <p>17.50</p>
+                    </div>
+                    <p class="food-description">With fries</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>FISH BURGER</p>
+                        <p>17.50</p>
+                    </div>
+                    <p class="food-description">With fries</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>VEGAN BURGER</p>
+                        <p>17.50</p>
+                    </div>
+                    <p class="food-description">With fries</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>SALMON TARTAR</p>
+                        <p>20</p>
+                    </div>
+                    <p class="food-description">Citrus zest and juice, herbs with fries</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="food-item">
+                        <p>JUICY SALMON STEAK</p>
+                        <p>30</p>
+                    </div>
+                    <p class="food-description">Served with fries and ruccola</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
