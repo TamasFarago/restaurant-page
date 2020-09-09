@@ -405,6 +405,7 @@ nav {
 
   .gallery {
     margin-top: 50px;
+    z-index: 999999
   }
 
 .col-sm-4 {
@@ -415,4 +416,5 @@ nav {
   figure {
       margin: 0 !important;
   }
+  
   
