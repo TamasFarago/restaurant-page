@@ -222,7 +222,9 @@ nav {
         background-position: center;
         background-size: cover; */
         width: 100%;
-        position: relative 
+        position: relative;
+        /* margin-bottom: 40px; */
+
         
      }
 
@@ -346,6 +348,10 @@ nav {
    
     
    }
+
+   .dessertblock {
+       display: block ;
+   }
  
    .remove {
        display: none;
@@ -379,4 +385,10 @@ nav {
    
    .white, .red {
        margin-bottom: 30px;
+   }
+
+
+   .the-restaurant {
+       background: rgb(255, 255, 255);
+       margin-top: 5%;
    }
