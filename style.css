@@ -394,6 +394,13 @@ nav {
        margin-top: 5%;
    }
 
+   .about-us p {
+       font-weight: 100;
+       letter-spacing: 3px;
+       font-size: 15px;
+       user-select: none;
+   }
+
    .about1 {
        margin: 30px;
    }
@@ -417,4 +424,80 @@ nav {
       margin: 0 !important;
   }
   
-  
+  .contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    background: rgb(248, 248, 236)
+  }
+
+  .address p {
+      font-weight: 100;
+      letter-spacing: 2px;
+        margin-bottom: -2px;
+        opacity: .8
+
+  }
+
+  .opening {
+      margin-top: 80px;
+      margin-bottom: 200px;
+  }
+
+  #nameform, #emailform {
+      width: 400px !important;
+  }
+
+.btn-send {
+    width: 400px;
+    background: rgb(41, 39, 39) !important;
+    align-items: center;
+    color: white !important;
+    font-weight: 100 !important;
+    height: 35px;
+    
+   
+}
+
+.btn-send:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+.address h5 {
+    margin-bottom: 47px;
+    font-size: 1.2rem
+}
+
+.hr {
+    margin-top: 80px;
+    height: .5px !important;
+}
+
+#nameform::placeholder,
+#emailform::placeholder,
+#textform::placeholder {
+    font-weight: 100;
+    opacity: .5
+}
+
+#subjectselect {
+    font-weight: 100;
+    opacity: .6
+    
+}
+
+.form input {
+    border-radius: 0 !important
+}
+
+
+.form input, form textarea {
+    outline: none !important;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+    }
+
+
