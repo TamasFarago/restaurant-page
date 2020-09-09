@@ -15,10 +15,12 @@ nav {
     position: fixed;
     float: left;
     border-right: 1px solid rgb(75, 69, 69);
+    
 }
 
 .logo img {
     width: 50%;
+    max-width: 250px;
     position: absolute;
     left: 50%;
     top: 5%;
@@ -130,17 +132,24 @@ nav {
   
   @keyframes zoom {
     from {
-      transform: scale(1.5, 1.5);
+      transform: scale(1.2, 1.2);
     }
     to {
       transform: scale(1, 1);
     }
   }
   
-  .carousel-inner .carousel-item > img {
+  /* .carousel-inner .carousel-item  {
     -webkit-animation: zoom 20s;
     animation: zoom 20s;
+  } */
+
+  .carousel-item img{
+      position: absolute;
+      z-index: -999
   }
+
+
 
   .carousel-caption  {
     position: absolute;  
@@ -151,7 +160,14 @@ nav {
     text-transform: uppercase;  
   }
 
+  .carousel-item:nth-child(1){
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
+    background-position: center;
+  }
  .carousel-caption p {
     font-size: 4rem;
     position: absolute; 
@@ -187,7 +203,7 @@ nav {
      
      ol.carousel-indicators li {
         background: rgba(255,255,255,0.39);
-        margin-left: .5rem;
+        
         
         
      }
@@ -200,11 +216,11 @@ nav {
      /* MENU SECTION */
 
      .menu {
-        /* background: rgb(255, 250, 226); */
-        background-image: url("background.jpg");
+        background: rgb(241, 236, 210);
+        /* background-image: url("background.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: cover; */
         width: 100%;
         position: relative 
         
@@ -252,8 +268,14 @@ nav {
         text-transform: uppercase;
         margin-bottom: -20px;
         font-size: 1.5rem;
-        
-        
+    }
+
+    #main-c {
+        transition: 0.5s 
+    }
+
+    .food-item p:nth-child(1){
+        text-transform: uppercase;
     }
 
     #main-course {
@@ -285,7 +307,7 @@ nav {
 
    .sticky-flex ul {
     transform: rotate(-90deg);
-    margin-top: -100px;
+    margin-top: -80px;
     display: flex;
     justify-content: space-between;
     flex-direction: row ;
@@ -300,7 +322,8 @@ nav {
     color: rgb(224, 214, 214);
     text-align: center;
     letter-spacing: 3px;
-    font-weight: 100
+    font-weight: 100;
+    cursor: pointer
    } 
 
    .sticky-flex li a{
@@ -328,4 +351,32 @@ nav {
        display: none;
    }
 
+
+   .carousel-item:nth-child(1){
+    background-image: url("pic1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+
+   .carousel-item:nth-child(2){
+    background-image: url("pic2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
    
+   .carousel-item:nth-child(3){
+    background-image: url("pic3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+   
+   .carousel-item {
+       height: 100vh;
+   }
+   
+   .white, .red {
+       margin-bottom: 30px;
+   }
