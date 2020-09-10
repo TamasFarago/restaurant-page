@@ -60,12 +60,64 @@ nav {
     font-weight: 100;
     font-size: 15px;
     
-
 }
+
+
 
 .middle-nav ul li a {
     color: inherit;
+    transition: .5s;
+    position: relative;
+    padding: 8px;
+    text-decoration: none;
+
 }
+.fromCenter a:hover:before {
+    width: 100%;
+    transform: scaleX(1);
+    transform-origin: left
+}
+.fromCenter a:before{
+    content: "";
+    border-bottom: 1px solid white;
+    height: 2px;
+    /* white-space: nowrap; */
+    width: 0%;
+    /* overflow: hidden; */
+    /* padding: 10px 0; */
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s
+}
+
+
+.fromCenter a:hover:after {
+    width: 100%;
+    transform: scaleX(1);
+    transform-origin: right
+}
+.fromCenter a:after{
+    content: "";
+    height: 2px;
+    border-bottom: 1px solid white;
+    /* white-space: nowrap; */
+    width: 0%;
+    /* overflow: hidden; */
+    /* margin-top: 10px ; */
+    transition: .5s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s
+
+}
+
 
 .book-button {
     position: absolute;
