@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
@@ -15,34 +16,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav>
+<nav data-aos="fade-down" >
     <div class="logo">
        <a href="#"><img src="hiclipart.com.png" alt=""></a> 
     </div>
     <div class="middle-nav">
         <ul>
-            <li class="fromCenter"><a href="#">Home</li></a>
-            <li class="fromCenter"><a href="#">Menu</li></a>
-            <li class="fromCenter"><a href="#">About Us</li></a>
-            <li class="fromCenter"><a href="#">Gallery</li></a>
-            <li class="fromCenter"><a href="#">Contact</li></a>
+            <li class="fromCenter" data-aos="fade-down"><a href="#">Home</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="50"><a href="#">Menu</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="100"><a href="#">About Us</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="150"><a href="#">Gallery</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="200"><a href="#">Contact</li></a>
         </ul>
     </div>
     
-        
-            
-                <a href="https://www.bookenda.com/">
-                    <div class="book-button">
-                    <p>Book A Table</p>
-                </div>
-                </a>
-               
-          
-       
-            
-      
-   
-   
+         <a href="https://www.bookenda.com/">
+            <div class="book-button">
+                <p>Book A Table</p>
+            </div>
+        </a>
+  
 </nav>
 <section class="main-page">
     <section class="carousel">
@@ -81,13 +74,13 @@
             </div>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu" data-aos="fade-up">
         <div class="menu-sidebar">
             <div class="sticky-flex">
             <ul>
-                <li class="drinksbtn" onClick="drinkfunc()"><a>Drinks</li></a>
-                <li class="dessertbtn" onClick="dessertfunc()"><a>Dessert</li></a>
-                <li class="mainsbtn" onClick="mainfunc()"><a>Mains</li></a>
+                <li class="drinksbtn" data-aos-delay="100" data-aos="fade-left"  onClick="drinkfunc()"><a>Drinks</li></a>
+                <li class="dessertbtn" data-aos-delay="50" data-aos="fade-left"  onClick="dessertfunc()"><a>Dessert</li></a>
+                <li class="mainsbtn"  data-aos="fade-left" onClick="mainfunc()"><a>Mains</li></a>
                 
             </ul>
             </div>
@@ -96,33 +89,33 @@
         <div id="main-course">
             <div class="container-fluid mains" id="main-c">
                 <div class="row text-center">
-                    <div class="col-12 col-md-4 menu-text">
+                    <div class="col-12 col-md-4 menu-text" >
                         <p>Menu</p>
                     </div>
                 </div>
-                <div class="row text-center">
+                <div class="row text-center" >
                     <div class="col-4 main-course">
                         <p>Main Course</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr-menu" >
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                        <div class="food-item">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
+                        <div class="food-item" >
                             <p>FRIED CHICKEN NUGGETS</p>
                             <p>$ 12</p>
                         </div>
                         <p class="food-description">Homemade served with honey coulis</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                        <div class="food-item">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
+                        <div class="food-item" >
                             <p>DUCK POUTINE</p>
                             <p>$ 14/19</p>
                         </div>
                         <p class="food-description">Small or Large format</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
-                        <div class="food-item">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
+                        <div class="food-item" >
                             <p>TOFU TAO</p>
                             <p>$ 15</p>
                         </div>
@@ -155,7 +148,7 @@
                 </div>
 
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>CESAR SALAD</p>
                             <p>$ 14 / $ 18.50 / $ 18</p>
@@ -169,7 +162,7 @@
                         </div>
                         <p class="food-description">With fries</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>FISH BURGER</p>
                             <p>$ 17.50</p>
@@ -179,21 +172,21 @@
                 </div>
 
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>VEGAN BURGER</p>
                             <p>$ 17.50</p>
                         </div>
                         <p class="food-description">With fries</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>SALMON TARTAR</p>
                             <p>$ 20</p>
                         </div>
                         <p class="food-description">Citrus zest and juice, herbs with fries</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>JUICY SALMON STEAK</p>
                             <p>$ 30</p>
@@ -202,12 +195,12 @@
                     </div>
                 </div>
                <br>
-                <div class="row text-center">
+                <div class="row text-center" >
                     <div class="col-4 main-course">
                         <p>Soups</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr-menu">
                 <div class="row text-center">
                     <div class="col-xs-12 col-sm-6 col-md-4 food-main">
                         <div class="food-item">
@@ -262,26 +255,26 @@
                 <br>
                 <div class="row text-center">
                     <div class="col-4 main-course">
-                        <p>STARTERS </p>
+                        <p>STARTERS</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr-menu">
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>Beef tartare</p>
                             <p>$ 10</p>
                         </div>
                         <p class="food-description"></p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>Cooked bone marrow on toast</p>
                             <p>$ 9</p>
                         </div>
                         <p class="food-description">with pickled and fresh garlic</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" >
                         <div class="food-item">
                             <p>Cold foie gras </p>
                             <p>$ 8</p>
@@ -312,24 +305,24 @@
                         <p>WHITE</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr-menu">
                 <div class="white">
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>VIOGNIER / SAUVIGNON BLANC</p>
                                 <p>B $ 35</p>
                             </div>
                             <p class="food-description">Languedoc, France, Pierrick Harang</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>SAUVIGNON BLANC / MUSCAT</p>
                                 <p>B $ 39</p>
                             </div>
                             <p class="food-description">Languedoc, France, Domaine Reine Juliette</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>CHABLIS</p>
                                 <p>G $ 16 / B $ 70</p>
@@ -339,21 +332,21 @@
                     </div>
     
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>SANCERRE</p>
                                 <p>G $ 17 / B $ 75</p>
                             </div>
                             <p class="food-description">Loire, France, Domaine Tinel-Blondelet, Frétoy</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>SAUVIGNON BLANC</p>
                                 <p>G $ 12 / B $ 55</p>
                             </div>
                             <p class="food-description">Touraine, France, Domaine Vincent Ricard</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>PINOT GRIGIO</p>
                                 <p>G $ 13 / B $ 57</p>
@@ -363,21 +356,21 @@
                     </div>
     
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>SOAVE CLASSICO</p>
                                 <p>G $ 13 / B $ 57</p>
                             </div>
                             <p class="food-description">Vénétie, Italie, Suavia Azianda Agricola</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>BLANC SELECCIÒ</p>
                                 <p>G $ 10 / B $ 45</p>
                             </div>
                             <p class="food-description">Penedès, Espagne, Can Feixes (Bio)</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>CHARDONNAY</p>
                                 <p>G $ 14 / B $ 64</p>
@@ -387,21 +380,21 @@
                     </div>
     
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>CHARDONNAY</p>
                                 <p>B $ 33</p>
                             </div>
                             <p class="food-description">Central Coast, Californie, É.-U. 2016, Hayes Valley</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>BRESSOC BLANC</p>
                                 <p>G $ 11 / B $ 48</p>
                             </div>
                             <p class="food-description">Québec, Canada, Domaine Bresee</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>CHARDONNAY</p>
                                 <p>B $ 33</p>
@@ -419,9 +412,9 @@
                             <p>RED</p>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="hr-menu">
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>CABERNET SAUVIGNON / MERLOT
                                 </p>
@@ -429,14 +422,14 @@
                             </div>
                             <p class="food-description">Languedoc, France, Chateau Cascadais (bio)</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>CORBIÈRES</p>
                                 <p>B $ 50</p>
                             </div>
                             <p class="food-description">Languedoc, France, Château Cascadais, Prestige</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>MINERVOIS</p>
                                 <p>B $ 50</p>
@@ -446,14 +439,14 @@
                     </div>
 
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>VENTOUX VIELLES</p>
                                 <p>B $ 50</p>
                             </div>
                             <p class="food-description">Rhône, France, Dom. Du Bon Remède</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>COLLINE ROUGE</p>
                                 <p>G $ 12 / B $ 51
@@ -461,7 +454,7 @@
                             </div>
                             <p class="food-description">Rhône, France, La Cabotte</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>BORDEAUX SUPÉRIEUR</p>
                                 <p>B $ 56.50</p>
@@ -471,21 +464,21 @@
                     </div>
 
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
-                                <p>BLAYE-CÔTES-DE-BORDEAUX</p>
+                                <p>BLAYE-DE-BORDEAUX</p>
                                 <p>G $ 13 / B $ 60</p>
                             </div>
                             <p class="food-description">France, Monconseil Gazin</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>SAINT-ESTÈPHE</p>
                                 <p>B $ 90</p>
                             </div>
                             <p class="food-description">Bordeaux, France, Château Pomys</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>MONTEPULCIANO</p>
                                 <p>B $ 43</p>
@@ -495,21 +488,21 @@
                     </div>
 
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>CABERNET SAUVIGNON</p>
                                 <p>B $ 33</p>
                             </div>
                             <p class="food-description">Abruzzes, Italie, Bellaretta</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>CHIANTI RISERVA</p>
                                 <p>G $ 13 / B $ 55</p>
                             </div>
                             <p class="food-description">Toscane, Italie, Renzo Masi, Brumaia</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>SANGIOVESE / CANAIOLO</p>
                                 <p>B $ 33</p>
@@ -525,9 +518,9 @@
                             <p>Other</p>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="hr-menu">
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                         <div class="food-item">
                             <p>COKE
                             </p>
@@ -535,14 +528,14 @@
                         </div>
                         <p class="food-description"></p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                         <div class="food-item">
                             <p>COKE DIET</p>
                             <p>$ 3.50</p>
                         </div>
                         <p class="food-description"></p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                         <div class="food-item">
                             <p>SPRITE</p>
                             <p>$ 3.75</p>
@@ -552,14 +545,14 @@
                 </div>
 
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                         <div class="food-item">
                             <p>GINGER ALE</p>
                             <p>$ 3.00</p>
                         </div>
                         <p class="food-description"></p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                         <div class="food-item">
                             <p>LIMONATA</p>
                             <p>$ 2.75
@@ -567,7 +560,7 @@
                         </div>
                         <p class="food-description"></p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                         <div class="food-item">
                             <p>SPARKLING ESKA</p>
                             <p>$ 3.25</p>
@@ -577,21 +570,21 @@
                 </div>
 
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                         <div class="food-item">
                             <p>KOMBUCHA</p>
                             <p>$ 4.95</p>
                         </div>
                         <p class="food-description"></p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                         <div class="food-item">
                             <p>HOME MADE ICED TEA</p>
                             <p>$ 3.25</p>
                         </div>
                         <p class="food-description">Bordeaux, France, Château Pomys</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                    <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                         <div class="food-item">
                             <p>HOME MADE ICED COFFEE</p>
                             <p>$ 4.50</p>
@@ -616,24 +609,24 @@
                         <p>CAKES</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr-menu">
                 <div class="white">
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>Dark Chocolate</p>
                                 <p>$ 5</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>Pink Princess Cake</p>
                                 <p>$ 7</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>Sweet Vanilla</p>
                                 <p>$ 5</p>
@@ -642,21 +635,21 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>Banana Pudding</p>
                                 <p>$ 8</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>Marshmallow taste</p>
                                 <p>$ 4</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>strawberry cake</p>
                                 <p>$ 5</p>
@@ -671,24 +664,24 @@
                         <p>ICE CREAM</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr-menu">
                 <div class="white">
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>Lemon ice cream</p>
                                 <p>$ 4</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>strawberry cream </p>
                                 <p>$ 5</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>coconut ice</p>
                                 <p>$ 6</p>
@@ -697,21 +690,21 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="50">
                             <div class="food-item">
                                 <p>orange ice</p>
                                 <p>$ 7</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="100">
                             <div class="food-item">
                                 <p>banana and vanilla</p>
                                 <p>$ 8</p>
                             </div>
                             <p class="food-description"></p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 food-main">
+                        <div class="col-xs-12 col-sm-6 col-md-4 food-main" data-aos="fade-up" data-aos-delay="150">
                             <div class="food-item">
                                 <p>pistachio ice cream</p>
                                 <p>$ 7</p>
@@ -729,7 +722,7 @@
     </section>
     <section class="about-us">
         <section class="container-fluid">
-            <div class="row align-items-center content about1">
+            <div class="row align-items-center content about1" data-aos="fade-left" >
               <div class="col-md-6 order-2 order-md-1">
                 <img src="about1.jpg" alt="" class="img-fluid">
               </div>
@@ -741,10 +734,10 @@
                 </div>
               </div>
             </div>
-            <div class="row align-items-center content">
+            <div class="row align-items-center content" data-aos="fade-right">
              
-              <div class="col-md-6 text-center">
-                <div class="row justify-content-center about2">
+              <div class="col-md-6 text-center" >
+                <div class="row justify-content-center about2"  >
                   <div class="col-10 col-lg-8">
                 <p class="lead">Within the last years we had the honour of being hosts and caterers of several successful and joyful parties, weddings and private bashes. At the restaurant there are six smaller or bigger saloons and rooms for you to choose from.</p>
                   </div>
@@ -757,60 +750,60 @@
         </section>
     </section>
 
-        <div class="row gallery">
+        <div class="row gallery" >
             
         
-             <figure class="col-sm-4">
-                  <img alt="picture" src="foods/food1.jpg"
+             <figure class="col-sm-4" >
+                  <img alt="picture" src="foods/food1.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="50"
+                    class="img-fluid" />
+                </a>
+              </figure>
+        
+              <figure class="col-sm-4" >
+                  <img alt="picture" src="foods/food5.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
+                    class="img-fluid" />
+                </a>
+              </figure>
+        
+              <figure class="col-sm-4" >
+                  <img alt="picture" src="foods/food6.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="150"
+                    class="img-fluid" />
+                </a>
+              </figure>
+        
+              <figure class="col-sm-4" >
+                  <img alt="picture" src="foods/food7.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="200"
                     class="img-fluid" />
                 </a>
               </figure>
         
               <figure class="col-sm-4">
-                  <img alt="picture" src="foods/food5.jpg"
+                  <img alt="picture" src="foods/food8.jpg"  data-aos="fade-up" data-aos-once="true" data-aos-delay="250"
                     class="img-fluid" />
                 </a>
               </figure>
         
-              <figure class="col-sm-4">
-                  <img alt="picture" src="foods/food6.jpg"
+              <figure class="col-sm-4" >
+                  <img alt="picture" src="foods/food9.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="300"
+                    class="img-fluid" />
+                </a>
+              </figure>
+              <figure class="col-sm-4" >
+                  <img alt="picture" src="foods/carlos-davila-cepeda-lpkDVZF_cbw-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="350"
                     class="img-fluid" />
                 </a>
               </figure>
         
-              <figure class="col-sm-4">
-                  <img alt="picture" src="foods/food7.jpg"
-                    class="img-fluid" />
-                </a>
-              </figure>
-        
-              <figure class="col-sm-4">
-                  <img alt="picture" src="foods/food8.jpg"
-                    class="img-fluid" />
-                </a>
-              </figure>
-        
-              <figure class="col-sm-4">
-                  <img alt="picture" src="foods/food9.jpg"
-                    class="img-fluid" />
-                </a>
-              </figure>
-              <figure class="col-sm-4">
-                  <img alt="picture" src="foods/carlos-davila-cepeda-lpkDVZF_cbw-unsplash.jpg"
-                    class="img-fluid" />
-                </a>
-              </figure>
-        
-              <figure class="col-sm-4">
+              <figure class="col-sm-4" >
                 
-                  <img alt="picture" src="foods/nanxi-wei-TVzSWDntlOM-unsplash.jpg"
+                  <img alt="picture" src="foods/nanxi-wei-TVzSWDntlOM-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="400"
                     class="img-fluid" />
                 </a>
               </figure>
         
-              <figure class="col-sm-4">
+              <figure class="col-sm-4" >
                 
-                  <img alt="picture" src="foods/alexander-kovacs-Q_X0T0E0IyU-unsplash.jpg"
+                  <img alt="picture" src="foods/alexander-kovacs-Q_X0T0E0IyU-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="450"
                     class="img-fluid" />
                 </a>
               </figure>
@@ -819,7 +812,7 @@
           
         <section class="contact">
             <div class="contact-container">
-                <div class="address">
+                <div class="address" data-aos="fade-right" data-aos-once="false">
                     <h5>CONTACT</h5>
                     <!-- <hr> -->
                     <p>415-414-5616</p>
@@ -835,7 +828,7 @@
                     <p>4 PM to 9 PM</p>
                     </div>
                 </div>
-                <div class="form" id="form">
+                <div class="form" id="form" data-aos="fade-left" data-aos-once="false">
                     <form>
                         <div class="form-group">
                           <label for="nameform">Name</label>
@@ -887,6 +880,10 @@
 
 <script src="script.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset: 100,
+  duration: 1000});
+</script>
 </body>
 </html>

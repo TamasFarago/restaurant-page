@@ -81,17 +81,13 @@ nav {
     content: "";
     border-bottom: 1px solid white;
     height: 2px;
-    /* white-space: nowrap; */
     width: 0%;
-    /* overflow: hidden; */
-    /* padding: 10px 0; */
-    transition: .5s;
     position: absolute;
     left: 0;
     top: 0;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform .5s
+    transition: transform .6s
 }
 
 
@@ -104,17 +100,14 @@ nav {
     content: "";
     height: 2px;
     border-bottom: 1px solid white;
-    /* white-space: nowrap; */
     width: 0%;
-    /* overflow: hidden; */
-    /* margin-top: 10px ; */
-    transition: .5s;
+    /* transition: .6s; */
     position: absolute;
     right: 0;
     bottom: 0;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform .5s
+    transition: transform .6s
 
 }
 
@@ -126,7 +119,7 @@ nav {
     width: 100%;
     text-align: center;
     align-items: center;
-    height: 14%;
+    height: 100px;
     /* line-height: 100px; */
     vertical-align: middle;
     background-image: url("background.jpg");
@@ -135,11 +128,12 @@ nav {
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 .book-button:hover {
     opacity: .7;
+    transition: .3s ease-in-out
+ 
 }
 
 
@@ -147,20 +141,17 @@ nav {
  .book-button p {
     font-weight: 300;
     letter-spacing: 2px;
-    /* position: absolute; */
-    /* top: 50%; */
+    position: absolute;
+    top: 20%;
     /* left: 50%; */
      /* transform: translateX(80%); */
     transform: translateY(35%);
     color: rgb(27, 27, 27);
+    border: 1px solid rgba(88, 83, 83, .4);
+    padding: 5px;
    
-  
-   
-    
-    
+
 } 
-
-
 
 .main-page {
     width: 80%;
@@ -289,9 +280,14 @@ nav {
         width: 100%;
         position: relative;
         /* margin-bottom: 40px; */
+    }
 
-        
-     }
+    .hr-menu{
+        height: .2px !important;
+        border-top: 0 !important;
+    }
+
+    
 
      .food-item {
          font-size: 15px;
@@ -543,6 +539,8 @@ nav {
     margin-top: 80px;
     height: .5px !important;
 }
+
+
 
 #nameform::placeholder,
 #emailform::placeholder,
