@@ -45,14 +45,18 @@ $('nav a[href*="#"]').click(function() {
 
 $(document).ready(function () {
     $(".menu-toggler").on("click", function() {
+        $(".middle-nav ul").toggleClass("blockdisplay");
         $("nav").toggleClass("open");
-        $("nav ul li").toggleClass("blockdisplay");
-
+       
+        
     })});
+
+   
 
 
     $("nav .middle-nav li").on("click", function() {
         $("nav").removeClass("open");
-        $("nav ul li").removeClass("blockdisplay");
+        $("nav").removeClass("blockdisplay");
+        $(".middle-nav ul").removeClass("blockdisplay");
     });
 
