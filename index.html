@@ -22,11 +22,11 @@
     </div>
     <div class="middle-nav">
         <ul>
-            <li class="fromCenter" data-aos="fade-down"><a href="#">Home</li></a>
-            <li class="fromCenter" data-aos="fade-down" data-aos-delay="50"><a href="#">Menu</li></a>
-            <li class="fromCenter" data-aos="fade-down" data-aos-delay="100"><a href="#">About Us</li></a>
-            <li class="fromCenter" data-aos="fade-down" data-aos-delay="150"><a href="#">Gallery</li></a>
-            <li class="fromCenter" data-aos="fade-down" data-aos-delay="200"><a href="#">Contact</li></a>
+            <li class="fromCenter" data-aos="fade-down"><a href="#home">Home</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="50"><a href="#menu">Menu</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="100"><a href="#about">About Us</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="150"><a href="#gallery">Gallery</li></a>
+            <li class="fromCenter" data-aos="fade-down" data-aos-delay="200"><a href="#contact">Contact</li></a>
         </ul>
     </div>
     
@@ -37,7 +37,7 @@
         </a>
   
 </nav>
-<section class="main-page">
+<section class="main-page" id="home">
     <section class="carousel">
         
       
@@ -120,13 +120,13 @@
         
 
     </section>
-    <section class="menu" data-aos="fade-up">
+    <section class="menu" id="menu" data-aos="fade-up">
         <div class="menu-sidebar">
             <div class="sticky-flex">
             <ul>
-                <li class="drinksbtn" data-aos-delay="40" data-aos="fade-left"  data-aos-once="true"onClick="drinkfunc()"><a>Drinks</li></a>
-                <li class="dessertbtn" data-aos-delay="20" data-aos="fade-left" data-aos-once="true" onClick="dessertfunc()"><a>Dessert</li></a>
-                <li class="mainsbtn"  data-aos="fade-left" data-aos-once="true"onClick="mainfunc()"><a>Mains</li></a>
+                <li class="drinksbtn" data-aos-delay="40" data-aos="fade-left"  data-aos-once="true"onClick="drinkfunc()"><a href="#menu">Drinks</li></a>
+                <li class="dessertbtn" data-aos-delay="20" data-aos="fade-left" data-aos-once="true" onClick="dessertfunc()"><a href="#menu">Dessert</li></a>
+                <li class="mainsbtn"  data-aos="fade-left" data-aos-once="true"onClick="mainfunc()"><a href="#menu">Mains</li></a>
                 
             </ul>
             </div>
@@ -766,7 +766,7 @@
 
         
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <section class="container-fluid">
             <div class="row align-items-center content about1" data-aos="fade-left" data-aos-once="true">
               <div class="col-md-6 order-2 order-md-1">
@@ -796,67 +796,87 @@
         </section>
     </section>
 
-        <div class="row gallery" >
+        <div class="row gallery" id="gallery">
             
         
-             <figure class="col-sm-4" >
+             <figure class="col-sm-4 picture-container">
                   <img alt="picture" src="foods/food1.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="50"
-                    class="img-fluid" />
-                </a>
+                    class="img-fluid" id="img1" />
+                    <div class="middle">
+                        <div class="img-content">JUICY SALMON STEAK</div>
+                    </div>
+                
               </figure>
         
-              <figure class="col-sm-4" >
+              <figure class="col-sm-4 picture-container" >
                   <img alt="picture" src="foods/food5.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
-                    class="img-fluid" />
-                </a>
+                    class="img-fluid" id="img2"/>
+                <div class="middle">
+                    <div class="img-content">SALMON TARTAR</div>
+                </div>
+                
               </figure>
         
-              <figure class="col-sm-4" >
+              <figure class="col-sm-4 picture-container" >
                   <img alt="picture" src="foods/food6.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="150"
-                    class="img-fluid" />
-                </a>
+                    class="img-fluid" id="img3"/>
+                    <div class="middle">
+                        <div class="img-content">VEAL CHEEK CONFIT </div>
+                    </div>
               </figure>
         
-              <figure class="col-sm-4" >
+              <figure class="col-sm-4 picture-container" >
                   <img alt="picture" src="foods/food7.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="200"
-                    class="img-fluid" />
-                </a>
+                    class="img-fluid" id="img4"/>
+                    <div class="middle">
+                        <div class="img-content">VEGAN BURGER</div>
+                    </div>
               </figure>
         
-              <figure class="col-sm-4">
+              <figure class="col-sm-4 picture-container">
                   <img alt="picture" src="foods/food8.jpg"  data-aos="fade-up" data-aos-once="true" data-aos-delay="250"
-                    class="img-fluid" />
-                </a>
+                    class="img-fluid" id="img5"/>
+                    <div class="middle">
+                        <div class="img-content">CHEF'S BURGER</div>
+                    </div>
               </figure>
         
-              <figure class="col-sm-4" >
+              <figure class="col-sm-4 picture-container" >
                   <img alt="picture" src="foods/food9.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="300"
-                    class="img-fluid" />
-                </a>
+                    class="img-fluid" id="img6"/>
+                    <div class="middle">
+                        <div class="img-content">CHEESEBURGER WITH FRIES</div>
+                    </div>
               </figure>
-              <figure class="col-sm-4" >
-                  <img alt="picture" src="foods/carlos-davila-cepeda-lpkDVZF_cbw-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="350"
-                    class="img-fluid" />
-                </a>
+              <figure class="col-sm-4 picture-container" >
+                  <img alt="picture" src="foods/j-lbxLlgi_8_w-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="350"
+                    class="img-fluid" id="img7"/>
+                    <div class="middle">
+                        <div class="img-content">WHITE BEAN CHICKEN SOUP</div>
+                    </div>
               </figure>
         
-              <figure class="col-sm-4" >
+              <figure class="col-sm-4 picture-container" >
                 
                   <img alt="picture" src="foods/nanxi-wei-TVzSWDntlOM-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="400"
-                    class="img-fluid" />
-                </a>
+                    class="img-fluid" id="img8"/>
+                    <div class="middle">
+                        <div class="img-content">ROSY-PINK DUCK BREAST</div>
+                    </div>
               </figure>
         
-              <figure class="col-sm-4" >
+              <figure class="col-sm-4 picture-container" >
                 
-                  <img alt="picture" src="foods/alexander-kovacs-Q_X0T0E0IyU-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="450"
-                    class="img-fluid" />
-                </a>
+                  <img alt="picture" src="foods/denise-chan-XEXQokCWiKc-unsplash.jpg" data-aos="fade-up" data-aos-once="true" data-aos-delay="450"
+                    class="img-fluid" id="img9"/>
+                    <div class="middle">
+                        <div class="img-content">ITALIAN WEDDING SOUP</div>
+                    </div>
               </figure>
              
           </div>
           
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-container">
                 <div class="address" data-aos="fade-right" data-aos-once="false">
                     <h5>CONTACT</h5>
