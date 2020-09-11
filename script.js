@@ -1,7 +1,13 @@
 let main = document.querySelector("#main-c")
 let drink = document.querySelector(".drinks")
 let dessert = document.querySelector(".dessert")
+let nav = document.querySelector("nav")
 
+
+
+function toggle(){
+    nav.classList.add("toggler-open")
+}
 
 function mainfunc(){
     main.classList.remove("remove");
@@ -35,3 +41,18 @@ $('nav a[href*="#"]').click(function() {
         scrollTop: $($(this).attr('href')).offset().top -100
     }, 200);
  });
+
+
+$(document).ready(function () {
+    $(".menu-toggler").on("click", function() {
+        $("nav").toggleClass("open");
+        $("nav ul li").toggleClass("blockdisplay");
+
+    })});
+
+
+    $("nav .middle-nav li").on("click", function() {
+        $("nav").removeClass("open");
+        $("nav ul li").removeClass("blockdisplay");
+    });
+
