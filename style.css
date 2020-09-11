@@ -989,6 +989,24 @@ nav {
     html{
         overflow-x: hidden;
     }
+    
+
+    .menu-sidebar {
+       
+        height: 100%;
+        background: rgb(252, 252, 252);
+        float: none;
+        position: sticky;
+        position: -webkit-sticky;
+        /* left: 20%; */
+        top:0;
+        z-index: 34444;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row ;
+        position: absolute
+
    
  } 
 
