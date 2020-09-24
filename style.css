@@ -15,12 +15,11 @@ nav {
     background: rgb(56, 56, 56);
     position: relative;
     min-height: 100vh;
-    /* min-height: 360px; */
     position: fixed;
     float: left;
-    overflow-y: scroll;
     z-index: 999999999999;
-    transition:  .3s ease-in-out
+    transition:  .3s ease-in-out;
+    overflow-y: scroll;
     
 
     
@@ -51,21 +50,31 @@ nav {
     justify-content: center;
     align-items: center; 
     transition:  1s ease-in-out;
-    height: 86%;
+    /* height: 86%; */
+
     
   
 }
+
+.top-middle-nav {
+    height:  calc(100vh - 100px);
+    overflow-y: auto;
+}
+
 
 .middle-nav ul {
     
     text-align: center;
     list-style-type: none;
-    position: absolute;
+    /* position: absolute; */
+    align-items: center;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
+    margin-top: 50px;
     width: 100%;
-    
+    display: flex;
     transition:  .2s ease-out ;
+    flex-direction: column;
 }
 
 
@@ -148,13 +157,14 @@ nav ul li {
     height: 100px;
     /* line-height: 100px; */
     vertical-align: middle;
-    background-image: url("background.jpg");
+    background-image: url("background.comp.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
+ 
 }
 .book-button:hover {
     opacity: .7;
@@ -299,13 +309,8 @@ nav ul li {
 
      .menu {
         background: rgb(241, 236, 210);
-        /* background-image: url("background.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; */
         width: 100%;
         position: relative;
-        /* margin-bottom: 40px; */
     }
 
     .hr-menu{
@@ -320,6 +325,7 @@ nav ul li {
          display: flex;
          justify-content: space-between;
          margin-right: 30px;
+         
          
      }
 
@@ -342,7 +348,6 @@ nav ul li {
     .menu-text {
         margin-top: 80px;
         margin-bottom: 100px;
-        margin-left: 20px;
         text-transform: uppercase;
         font-size: 2.5rem;
         color: #333;
@@ -357,10 +362,11 @@ nav ul li {
         text-transform: uppercase;
         margin-bottom: -20px;
         font-size: 1.5rem;
+        transition: 0.5 ease-in-out
     }
 
     #main-c {
-        transition: 0.5s 
+        transition: 0.5s ease-in-out
     }
 
     .food-item p:nth-child(1){
@@ -436,9 +442,14 @@ nav ul li {
     /* float: right */
     margin-left: 20px;
     overflow-x: hidden;
+    transition: 0.5 ease-in-out
     
    
     
+   }
+
+   .dessert{
+    transition: 0.5 ease-in-out
    }
 
    .dessertblock {
@@ -451,24 +462,27 @@ nav ul li {
 
 
    .carousel-item:nth-child(1){
-    background-image: url("pic1.jpg");
+    background-image: url("pic1.comp.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
    }
 
    .carousel-item:nth-child(2){
-    background-image: url("pic2.jpg");
+    background-image: url("pic2.comp.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
    }
    
    .carousel-item:nth-child(3){
-    background-image: url("pic3.jpg");
+    background-image: url("pic3.comp.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
    }
    
    .carousel-item {
@@ -642,12 +656,12 @@ footer {
 .container-popup {
      align-items: center;
     z-index: 9999999;
-    position: absolute;
+    position: relative;
 
-    top: 72%;
-   right: 60%;
+    top: -85%;
+   /* right: 60%; */
    /* bottom: 30%; */
-   left: 80%;
+   left: 65%;
    
     height: 360px;
     justify-content: center;
@@ -775,7 +789,6 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: row;
-    /* height: 60px; */
   }
   
   
@@ -826,7 +839,6 @@ footer {
     position: absolute;
     z-index: 99999;
     left: 50%;
-    /* margin: auto; */
     text-align: center;
     justify-content: center;
     transform: translateX(-50%);
@@ -859,11 +871,13 @@ footer {
 {
     transform: scale(1.1);
     transition-delay: 0s;
-    filter: brightness(50%);
-    -webkit-filter: brightness(50%);
+    opacity: 0.5;
+    background: black;
 }
     
-
+.picture-container  {
+    background: black;
+}
 
 
 .picture-container:hover .img-content{
@@ -901,6 +915,10 @@ footer {
     transition:  .6s ease-in !important;
 }
 
+.book-link {
+    display: none;
+
+}
 
 
 
@@ -920,34 +938,64 @@ nav {
     width: 100vw;
     min-height: 50px;
     height: 70px;
-    
-    
+    overflow-y: hidden;
+
 }
 
+.top-middle-nav {
+    overflow-y: hidden;
+}
+
+
+
+
 .book-button {
+    opacity: 0;
     display: none;
+    transition: 1s ease-out !important
+}
+
+.book-opacity{
+    opacity: 1;
+    display: block;
+    transition: 1s ease-in !important
+
 }
 
  .middle-nav ul  {
-     /* display: none;  */
     opacity: 0;
+    margin-top: 120px;
+
+
     
 } 
 
+.logo {
+    position: fixed;
+    right: 50%;
+    left: 50%;
+}
+
+
+
 .middle-nav ul li{
-    margin: 30px;
+    margin-bottom: 30px;
 }
 .show{
     opacity: 1 !important
 }
   
+.book-link {
+    display: block;
+    color: rgb(250, 245, 116) !important
+
+}
 
 
 
 .logo img{
     height: 50px;
     width: 50px;
-    /* display: flex; */
     left: 100%;
     margin-top: 10px;
      
@@ -959,6 +1007,12 @@ nav {
 }
 .menu-toggler {
     display: block;
+}
+
+.top-middle-nav {
+    height:  100vh;
+    overflow-y: scroll;
+
 }
 }
 
@@ -998,7 +1052,6 @@ nav {
         float: none;
         position: sticky;
         position: -webkit-sticky;
-        /* left: 20%; */
         top:0;
         z-index: 34444;
         align-items: center;
@@ -1006,17 +1059,16 @@ nav {
         display: flex;
         flex-direction: row ;
         position: absolute
-
-   
- } 
-
+    } 
+    .carousel-item:nth-child(1),
+    .carousel-item:nth-child(2),
+    .carousel-item:nth-child(3) {
+        background-attachment: initial;
+    }
+ }
 
  @media (max-width: 576px) { 
      form, #emailform, #nameform, .btn-send{
          width: 200px !important
      }
-     #subjectselect{
-         font-size: 10px;
-     }
-   
-  } 
+} 
